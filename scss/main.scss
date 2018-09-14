@@ -1,5 +1,6 @@
 .css-carousel {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .css-carousel .css-img {
   width: 50%;
@@ -10,25 +11,35 @@
   opacity: 0;
   -webkit-animation-name: css-animation-fade;
   -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite; }
+  -webkit-animation-iteration-count: infinite;
+}
 
 .css-carousel .css-img:nth-child(2) {
-  -webkit-animation-delay: 5s; }
+  -webkit-animation-delay: 5s;
+}
 
 .css-carousel .css-img:nth-child(3) {
-  -webkit-animation-delay: 10s; }
+  -webkit-animation-delay: 10s;
+}
 
 .css-carousel .css-img:nth-child(4) {
-  -webkit-animation-delay: 15s; }
+  -webkit-animation-delay: 15s;
+}
 
 @-webkit-keyframes css-animation-fade {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   5% {
-    opacity: 1; }
+    opacity: 1;
+  }
   15% {
-    opacity: 1; }
+    opacity: 1;
+  }
   20% {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
