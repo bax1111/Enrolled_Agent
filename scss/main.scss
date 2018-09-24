@@ -1,3 +1,36 @@
+$body-img: url(../img/bg_img.jpg);
+$container-color: #fff;
+
+body {
+  background: $body-img;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+
+  .container {
+    width: 960px;
+    margin: auto;
+    background: $container-color;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+// Navigation
+header nav{
+  float: right;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 20px;
+
+  li{
+		float: left;
+		display: inline;
+		padding: 0 15px 0 15px;
+	}
+}
+
 .css-carousel {
   overflow: hidden;
 }
