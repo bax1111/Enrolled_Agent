@@ -9,7 +9,8 @@ gulp.task("sass", function() {
   return gulp
     .src("./scss/*.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("dist/css"));
+    .pipe(gulp.dest("dist/css"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("watch", function() {

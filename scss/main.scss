@@ -1,62 +1,112 @@
-$body-img: url(../img/bg_img.jpg);
-$container-color: #fff;
+$body-img: url(../img/bg_img.png);
+$container-color: white;
+$primary-color: #0e1c2b;
+$secondary-color: #009444;
 
 body {
   background: $body-img;
-  background-repeat: repeat;
   margin: 0;
   padding: 0;
+  background-repeat: repeat;
 
   .container {
-    width: 960px;
+    width: 70%;
     margin: auto;
     background: $container-color;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
     margin-top: 10px;
+    overflow: hidden;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .services {
+    width: 66%;
+    float: left;
+    margin: 10px;
+  }
+
+  .side-form {
+    width: 30%;
+    float: right;
   }
 }
 
-// Navigation
-header nav{
-  float: right;
-  text-decoration: none;
-  display: inline;
-  padding-bottom: 20px;
-
-  li{
-		float: left;
-		display: inline;
-		padding: 0 15px 0 15px;
-	}
-}
-
-.css-carousel {
+#nav-container {
+  width: 90%;
+  margin: auto;
   overflow: hidden;
 }
 
-.css-carousel .css-img {
-  width: 50%;
-  height: 50%;
-  max-width: 50%;
-  max-height: 50%;
-  position: absolute;
-  opacity: 0;
-  -webkit-animation-name: css-animation-fade;
-  -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.css-carousel .css-img:nth-child(2) {
-  -webkit-animation-delay: 5s;
+// Navigation
+#branding {
+  float: left;
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
 }
 
-.css-carousel .css-img:nth-child(3) {
-  -webkit-animation-delay: 10s;
+header {
+  background-color: $primary-color;
+  border-bottom: 5px solid $secondary-color;
+  padding-top: 10px;
 }
 
-.css-carousel .css-img:nth-child(4) {
-  -webkit-animation-delay: 15s;
+nav {
+  float: right;
+  padding-top: 20px;
+
+  li {
+    display: inline;
+    padding: 8px 8px;
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: white;
+      background-color: $secondary-color;
+    }
+  }
+}
+
+// Coarousel Slideshow
+.css-carousel {
+  overflow: hidden;
+
+  .css-img {
+    width: 50%;
+    height: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    position: absolute;
+    opacity: 0;
+    -webkit-animation-name: css-animation-fade;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  .css-img:nth-child(2) {
+    -webkit-animation-delay: 5s;
+  }
+
+  .css-img:nth-child(3) {
+    -webkit-animation-delay: 10s;
+  }
+
+  .css-img:nth-child(4) {
+    -webkit-animation-delay: 15s;
+  }
 }
 
 @-webkit-keyframes css-animation-fade {
@@ -75,4 +125,12 @@ header nav{
   to {
     opacity: 0;
   }
+}
+
+// Services Grid Layout
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1em;
 }

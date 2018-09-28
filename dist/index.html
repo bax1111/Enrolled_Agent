@@ -15,76 +15,85 @@
 
 <body>
     <div class="container">
+        <!-- Header/Navigation -->
         <header>
-            <!-- Navigation -->
-            <div class="menu-branding">
-                <h1>
-                    Judd Anicette Enrolled Agent
-                </h1>
-            </div>
-            <nav>
-                <ul class="menu-nav">
-                    <li class="nav-item current">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Section with Carousel-->
-        <!-- <article>
-        <div class="css-carousel">
-            <img src="img/image1.jpg" alt="" class="css-img">
-            <img src="img/image2.jpg" alt="" class="css-img">
-            <img src="img/image3.jpg" alt="" class="css-img">
-            <img src="img/image4.jpg" alt="" class="css-img">
-        </div>
-    </article> -->
-        <!-- Article with Services-->
-        <article>
-            <div class="services">
-                <div class="service-1">
-                    <h3>Tax Prep</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
-                        laboriosam
-                        nesciunt quas.
-                    </p>
+
+            <div id="nav-container">
+                <div id="branding">
+                    <h1>
+                        Judd Anicette
+                        <br><span class="indent">Enrolled Agent</span>
+                    </h1>
+
                 </div>
-                <div class="service-2">
-                    <h3>Bookkeeping</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
-                        laboriosam
-                        nesciunt quas.
-                    </p>
-                </div>
-                <div class="service-3">
-                    <h3>Payroll</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
-                        laboriosam
-                        nesciunt quas.
-                    </p>
-                </div>
-                <div class="service-4">
-                    <h3>Money Management</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
-                        laboriosam
-                        nesciunt quas.
-                    </p>
-                </div>
+                <nav>
+                    <ul class="menu-nav">
+                        <li class="nav-item current">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-        </article>
-        <!-- Aside with Contact Form -->
-        <aside class="side-form">
-            <div>
+        </header>
+        <!-- Section with Carousel-->
+        <!-- <section class="carousel">
+            <div class="css-carousel">
+                <img src="img/image1.jpg" alt="" class="css-img">
+                <img src="img/image2.jpg" alt="" class="css-img">
+                <img src="img/image3.jpg" alt="" class="css-img">
+                <img src="img/image4.jpg" alt="" class="css-img">
+            </div>
+        </section> -->
+        <!-- Article with Services-->
+
+
+        <section>
+            <div class="services">
+                <div class="grid-container"><div class="service-items">
+                <h3>Tax Prep</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
+                laboriosam
+                nesciunt quas.
+                </p>
+                </div>
+                <div class="service-items">
+                <h3>Bookkeeping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
+                laboriosam
+                nesciunt quas.
+                </p>
+                </div>
+                <div class="service-items">
+                <h3>Payroll</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
+                laboriosam
+                nesciunt quas.
+                </p>
+                </div>
+                <div class="service-items">
+                <h3>Money Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus? Voluptate non
+                laboriosam
+                nesciunt quas.
+                </p>
+                </div></div>
+            </div>
+
+
+
+            <!-- Aside with Contact Form -->
+
+            <div class="side-form">
                 <form action="">
                     <h3>FREE CONSULTATION</h3>
                     <input type="text" name="First Name" id="firstName" value="First Name">
@@ -93,7 +102,7 @@
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        </aside>
+        </section>
 
 
         <footer id="footer"><i class="fas fa-copyright"></i> 2018, Judd Anicette - Enrolled Agent</footer>
