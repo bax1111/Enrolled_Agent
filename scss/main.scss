@@ -4,12 +4,7 @@ $body-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' wid
 $container-color: white;
 $primary-color: #0e1c2b;
 $secondary-color: #a67c00;
-
-// #a67c00;
-// 0e1c2b
-// #c39e3a;
-
-// #009444
+$page-width: 70%;
 
 // Global
 body {
@@ -20,7 +15,7 @@ body {
   background-color: $container-color;
 
   .container {
-    width: 60%;
+    width: $page-width;
     margin: auto auto 40px auto;
     background: $container-color;
     border-radius: 10px;
@@ -31,7 +26,7 @@ body {
   }
 
   .services {
-    width: 68%;
+    width: 67%;
     float: left;
     margin: 10px;
     h2 {
@@ -70,12 +65,13 @@ body {
         margin-top: 0;
       }
 
-      input {
+      input,
+      select {
         margin-bottom: 5px;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
         border: 1px solid $primary-color;
-        width: 90%;
+        width: 95%;
         text-indent: 5px;
       }
       button {
@@ -85,6 +81,7 @@ body {
         background-color: $primary-color;
         color: $container-color;
         padding: 5px;
+        margin: auto;
         width: 90%;
       }
     }
@@ -130,8 +127,11 @@ ul {
 // Navigation
 #branding {
   float: left;
+  width: 35%;
   img {
-    width: 100%;
+    width: 70%;
+    padding: 10px 0;
+    border: 0;
   }
   h1 {
     margin: 0;
@@ -147,17 +147,17 @@ header {
 
 .menu-nav {
   float: right;
-  padding-top: 55px;
+  padding-top: 50px;
+  .current {
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
 
   li {
     display: inline;
-    padding: 8px 8px;
+    margin: 8px 8px;
     font-weight: 500;
     font-size: 22px;
-    .current {
-      color: $primary-color;
-      background-color: $secondary-color;
-    }
   }
 
   a {
@@ -165,8 +165,7 @@ header {
     color: white;
 
     &:hover {
-      color: white;
-      background-color: $secondary-color;
+      color: $secondary-color;
     }
   }
 }
@@ -233,14 +232,72 @@ header {
   }
   hr {
     height: 3px;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     width: 80%;
   }
-  .accord-1 {
+  .accord-items {
     padding: 0 20px 0 20px;
+
+    a {
+      font-weight: bold;
+      color: $secondary-color;
+    }
+    section {
+      display: none;
+      &:target {
+        display: inline;
+      }
+    }
   }
-  .accord-2 {
-    padding: 0 20px 0 20px;
+}
+
+// Contact Page
+.inform {
+  width: 100%;
+}
+.contact {
+  float: left;
+  padding-left: 6em;
+  width: 40%;
+  font-size: 18px;
+}
+
+.side-form-ct {
+  width: 50%;
+  float: right;
+
+  .form-ct {
+    background-color: rgba(128, 128, 128, 0.178);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid $primary-color;
+    margin: 10px;
+    padding: 10px;
+
+    h3 {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    input,
+    select {
+      margin-bottom: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid $primary-color;
+      width: 95%;
+      text-indent: 5px;
+    }
+    button {
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid $secondary-color;
+      background-color: $primary-color;
+      color: $container-color;
+      padding: 5px;
+      margin: auto;
+      width: 90%;
+    }
   }
 }
 
@@ -248,7 +305,7 @@ header {
   position: fixed;
   left: 1;
   bottom: 0;
-  width: 60%;
+  width: $page-width;
   background-color: $primary-color;
   margin: auto;
   border-top-left-radius: 10px;

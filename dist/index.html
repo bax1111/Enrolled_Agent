@@ -20,13 +20,13 @@
 
             <div id="nav-container">
                 <div id="branding">
-                    <img src="img/ja_banner1.jpg" alt="">
+                    <a href="index.html"><img src="img/ufs_logo.png" alt="Upward_Financial_Services"></a>
 
                 </div>
                 <nav class="menu-nav">
                     <ul>
-                        <li class="current">
-                            <a href="index.html">Home</a>
+                        <li>
+                            <a class="current" href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="about.html">About</a>
@@ -100,9 +100,17 @@
                 <div class="form">
                     <form action="">
                         <h3>FREE CONSULTATION</h3>
-                        <input type="text" name="First Name" id="firstName" value="First Name">
-                        <input type="text" name="Last Name" id="lastName" value="Last Name">
-                        <input type="email" name="Email" id="email" value="Email"><br>
+                        <input type="text" name="First Name" id="firstName" placeholder="First Name">
+                        <input type="text" name="Last Name" id="lastName" placeholder="Last Name">
+                        <input type="email" name="Email" id="email" placeholder="Email">
+                        <select pl name="services">
+                            <option>Select Service</option>
+                            <option required value="taxprep">Tax Prep</option>
+                            <option required value="bookkeeping">Bookkeeping</option>
+                            <option required value="payroll">Payroll</option>
+                            <option required value="moneymanagement">Money Management</option>
+                        </select>
+                        <br>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
