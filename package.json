@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Enrolled Agent Website",
   "main": "index.js",
+  "homepage": "https://bax1111.github.io/Enrolled_Agent",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Willy Anicette",
   "license": "MIT",
@@ -13,6 +15,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1"
   }
