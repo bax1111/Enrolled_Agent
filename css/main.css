@@ -5,7 +5,7 @@ body {
   background-repeat: repeat;
   background-color: white; }
   body .container {
-    width: 60%;
+    width: 70%;
     margin: auto auto 40px auto;
     background: white;
     border-radius: 10px;
@@ -13,7 +13,7 @@ body {
     overflow: hidden;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   body .services {
-    width: 68%;
+    width: 67%;
     float: left;
     margin: 10px; }
     body .services h2 {
@@ -44,12 +44,13 @@ body {
       body .side-form .form h3 {
         margin-bottom: 10px;
         margin-top: 0; }
-      body .side-form .form input {
+      body .side-form .form input,
+      body .side-form .form select {
         margin-bottom: 5px;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
         border: 1px solid #0e1c2b;
-        width: 90%;
+        width: 95%;
         text-indent: 5px; }
       body .side-form .form button {
         border-top-left-radius: 5px;
@@ -58,6 +59,7 @@ body {
         background-color: #0e1c2b;
         color: white;
         padding: 5px;
+        margin: auto;
         width: 90%; }
 
 .cta-bar {
@@ -92,9 +94,12 @@ ul {
   padding: 0; }
 
 #branding {
-  float: left; }
+  float: left;
+  width: 35%; }
   #branding img {
-    width: 100%; }
+    width: 70%;
+    padding: 10px 0;
+    border: 0; }
   #branding h1 {
     margin: 0;
     padding: 0; }
@@ -106,21 +111,20 @@ header {
 
 .menu-nav {
   float: right;
-  padding-top: 55px; }
+  padding-top: 50px; }
+  .menu-nav .current {
+    color: #0e1c2b;
+    background-color: #a67c00; }
   .menu-nav li {
     display: inline;
-    padding: 8px 8px;
+    margin: 8px 8px;
     font-weight: 500;
     font-size: 22px; }
-    .menu-nav li .current {
-      color: #0e1c2b;
-      background-color: #a67c00; }
   .menu-nav a {
     text-decoration: none;
     color: white; }
     .menu-nav a:hover {
-      color: white;
-      background-color: #a67c00; }
+      color: #a67c00; }
 
 .slideshow {
   width: 100%; }
@@ -170,18 +174,63 @@ header {
     text-indent: 10px; }
   #accordian hr {
     height: 3px;
-    background-color: #a67c00;
+    background-color: #0e1c2b;
     width: 80%; }
-  #accordian .accord-1 {
+  #accordian .accord-items {
     padding: 0 20px 0 20px; }
-  #accordian .accord-2 {
-    padding: 0 20px 0 20px; }
+    #accordian .accord-items a {
+      font-weight: bold;
+      color: #a67c00; }
+    #accordian .accord-items section {
+      display: none; }
+      #accordian .accord-items section:target {
+        display: inline; }
+
+.inform {
+  width: 100%; }
+
+.contact {
+  float: left;
+  padding-left: 6em;
+  width: 40%;
+  font-size: 18px; }
+
+.side-form-ct {
+  width: 50%;
+  float: right; }
+  .side-form-ct .form-ct {
+    background-color: rgba(128, 128, 128, 0.178);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #0e1c2b;
+    margin: 10px;
+    padding: 10px; }
+    .side-form-ct .form-ct h3 {
+      margin-bottom: 10px;
+      margin-top: 0; }
+    .side-form-ct .form-ct input,
+    .side-form-ct .form-ct select {
+      margin-bottom: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid #0e1c2b;
+      width: 95%;
+      text-indent: 5px; }
+    .side-form-ct .form-ct button {
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid #a67c00;
+      background-color: #0e1c2b;
+      color: white;
+      padding: 5px;
+      margin: auto;
+      width: 90%; }
 
 #footer {
   position: fixed;
   left: 1;
   bottom: 0;
-  width: 60%;
+  width: 70%;
   background-color: #0e1c2b;
   margin: auto;
   border-top-left-radius: 10px;
