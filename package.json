@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Enrolled Agent Website",
   "main": "index.js",
+  "homepage": "https://bax1111.github.io/Enrolled_Agent",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
