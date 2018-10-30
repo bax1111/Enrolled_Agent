@@ -6,6 +6,10 @@ $primary-color: #0e1c2b;
 $secondary-color: #a67c00;
 $page-width: 70%;
 
+* {
+  box-sizing: border-box;
+}
+
 // Global
 body {
   background: $body-img;
@@ -157,7 +161,7 @@ header {
     display: inline;
     margin: 8px 8px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   a {
@@ -173,23 +177,6 @@ header {
 // Carousel Slideshow
 .slideshow {
   width: 100%;
-}
-
-// Services Grid Layout
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 1em;
-
-  h3 {
-    color: $container-color;
-    background-color: $primary-color;
-    border: 1px solid $secondary-color;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 5px;
-  }
 }
 
 // About Page
@@ -219,6 +206,29 @@ header {
     padding: 5px;
     text-transform: uppercase;
     font-weight: 500;
+  }
+}
+
+// Services Grid Layout
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+
+  h3 {
+    color: $container-color;
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  i {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
   }
 }
 
