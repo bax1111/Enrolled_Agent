@@ -1,14 +1,5 @@
+@import "config";
 @import "slideshow";
-
-$body-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%230e1c2b' fill-opacity='.40'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
-$container-color: white;
-$primary-color: #0e1c2b;
-$secondary-color: #a67c00;
-$page-width: 70%;
-
-* {
-  box-sizing: border-box;
-}
 
 // Global
 body {
@@ -61,6 +52,88 @@ body {
     }
     p {
       margin-bottom: 25px;
+    }
+  }
+
+  .cta-bar {
+    background-color: $primary-color;
+    width: 100%;
+    height: 60px;
+    .page-name {
+      width: 30%;
+      float: left;
+      margin: 0;
+      padding: 10px 10px 10px 30px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $container-color;
+    }
+    .cta-phone {
+      width: 60%;
+      margin: 0;
+      padding: 10px;
+      float: right;
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $container-color;
+    }
+  }
+
+  // Navigation
+  #branding {
+    float: left;
+    width: 35%;
+    img {
+      width: 70%;
+      padding: 10px 0;
+      border: 0;
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  #nav-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: $primary-color;
+    border-bottom: 5px solid $secondary-color;
+    padding-top: 10px;
+  }
+
+  .menu-nav {
+    float: right;
+    padding-top: 50px;
+    .current {
+      color: $primary-color;
+      background-color: $secondary-color;
+    }
+
+    li {
+      display: inline;
+      margin: 8px 8px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $secondary-color;
+      }
     }
   }
 
@@ -137,88 +210,6 @@ body {
         margin: auto;
         width: 90%;
       }
-    }
-  }
-}
-
-.cta-bar {
-  background-color: $primary-color;
-  width: 100%;
-  height: 60px;
-  .page-name {
-    width: 30%;
-    float: left;
-    margin: 0;
-    padding: 10px 10px 10px 30px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $container-color;
-  }
-  .cta-phone {
-    width: 60%;
-    margin: 0;
-    padding: 10px;
-    float: right;
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $container-color;
-  }
-}
-
-#nav-container {
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-// Navigation
-#branding {
-  float: left;
-  width: 35%;
-  img {
-    width: 70%;
-    padding: 10px 0;
-    border: 0;
-  }
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-header {
-  background-color: $primary-color;
-  border-bottom: 5px solid $secondary-color;
-  padding-top: 10px;
-}
-
-.menu-nav {
-  float: right;
-  padding-top: 50px;
-  .current {
-    color: $primary-color;
-    background-color: $secondary-color;
-  }
-
-  li {
-    display: inline;
-    margin: 8px 8px;
-    font-weight: 500;
-    font-size: 20px;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-
-    &:hover {
-      color: $secondary-color;
     }
   }
 }
@@ -351,3 +342,5 @@ header {
   font-size: 14px;
   padding: 3px 0 3px 0;
 }
+
+@import "mobile";
