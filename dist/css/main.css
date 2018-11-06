@@ -17,27 +17,12 @@ body {
     float: left;
     margin: 10px; }
     body .services h2 {
-      border-top-left-radius: 10px;
-      border-bottom-right-radius: 10px;
       padding: 5px;
       margin: auto auto 0 auto;
       text-transform: uppercase;
       text-align: center;
       font-size: 1.4rem;
-      position: relative;
-      z-index: 1;
       overflow: hidden; }
-      body .services h2:before, body .services h2:after {
-        position: absolute;
-        top: 51%;
-        overflow: hidden;
-        width: 50%;
-        height: 3px;
-        content: "\a0";
-        background-color: #a67c00; }
-      body .services h2:before {
-        margin-left: -50%;
-        text-align: right; }
     body .services p {
       margin-bottom: 25px; }
   body .cta-bar {
@@ -101,8 +86,10 @@ body {
   body .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 1em; }
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    border: 5px solid #0000001a;
+    border-radius: 5px; }
     body .grid-container .service-items {
       text-align: center; }
       body .grid-container .service-items i {
@@ -111,10 +98,6 @@ body {
         padding-top: 10px;
         color: #0e1c2b; }
       body .grid-container .service-items h3 {
-        border-bottom: 3px solid #a67c00;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding: 5px;
         font-weight: 500; }
       body .grid-container .service-items span,
       body .grid-container .service-items .learnMore {
@@ -123,7 +106,7 @@ body {
         padding: 2px;
         border-radius: 3px;
         text-decoration: none;
-        line-height: 25px; }
+        line-height: 35px; }
   body .side-form {
     width: 30%;
     float: right; }
@@ -268,9 +251,16 @@ body {
       clear: both; }
   nav.menu-nav {
     padding: 5px; }
+  div.services {
+    width: 95%;
+    margin-left: 2%;
+    margin-right: auto;
+    clear: both; }
+    div.services .lineHeight {
+      line-height: 2.3em; }
   div.side-form {
     clear: both;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; }
   footer#footer {
