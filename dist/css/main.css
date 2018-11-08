@@ -1,3 +1,27 @@
+.slideshow {
+  width: 100%;
+  background-color: red;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 3s; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Standard syntax */
+@keyframes example {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 body {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%230e1c2b' fill-opacity='.40'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
   margin: 0;
@@ -6,10 +30,9 @@ body {
   background-color: white; }
   body .container {
     width: 70%;
-    margin: auto auto 40px auto;
+    margin: 10px auto 40px auto;
     background: white;
     border-radius: 10px;
-    margin-top: 10px;
     overflow: hidden;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   body .services {
@@ -25,6 +48,15 @@ body {
       overflow: hidden; }
     body .services p {
       margin-bottom: 25px; }
+  body .servicesBelow {
+    clear: both; }
+    body .servicesBelow h2 {
+      padding: 5px;
+      margin: auto auto 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.4rem;
+      overflow: hidden; }
   body .cta-bar {
     background-color: #0e1c2b;
     width: 100%;
@@ -86,10 +118,11 @@ body {
   body .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
     grid-gap: 1em;
     border: 5px solid #0000001a;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 10px; }
     body .grid-container .service-items {
       text-align: center; }
       body .grid-container .service-items i {

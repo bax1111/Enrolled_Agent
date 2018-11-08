@@ -11,10 +11,9 @@ body {
 
   .container {
     width: $page-width;
-    margin: auto auto 40px auto;
+    margin: 10px auto 40px auto;
     background: $container-color;
     border-radius: 10px;
-    margin-top: 10px;
     overflow: hidden;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -25,8 +24,6 @@ body {
     float: left;
     margin: 10px;
     h2 {
-      // border-top-left-radius: 10px;
-      // border-bottom-right-radius: 10px;
       padding: 5px;
       margin: auto auto 0 auto;
       text-transform: uppercase;
@@ -36,6 +33,18 @@ body {
     }
     p {
       margin-bottom: 25px;
+    }
+  }
+
+  .servicesBelow {
+    clear: both;
+    h2 {
+      padding: 5px;
+      margin: auto auto 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.4rem;
+      overflow: hidden;
     }
   }
 
@@ -125,14 +134,13 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
     grid-gap: 1em;
     border: 5px solid #0000001a;
     border-radius: 5px;
-
+    padding: 0 15px;
+    margin: 10px;
     .service-items {
       text-align: center;
-
       i {
         font-size: 3em;
         margin: 0;
@@ -141,7 +149,6 @@ body {
       }
 
       h3 {
-        // padding: 5px;
         font-weight: 500;
       }
 
