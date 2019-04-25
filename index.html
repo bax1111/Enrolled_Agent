@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fotorama.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <title>Enrolled Agent</title>
+    <title>Judd Anicette | Enrolled Agent</title>
   </head>
 
   <body>
@@ -30,9 +32,7 @@
               <li><a class="current" href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services</a></li>
-              <li><a href="news.html">News</a></li>
               <li><a href="guides.html">Guides</a></li>
-              <li><a href="taxCenter.html">Tax Center</a></li>
               <li><a href="resources.html">Resources</a></li>
               <li><a href="careers.html">Careers</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -41,20 +41,20 @@
         </div>
       </header>
       <!-- Section with Carousel -->
-      <div><img class="slideshow" src="" name="slide" alt="" /></div>
+      <div
+        class="fotorama"
+        data-loop="true"
+        data-autoplay="true"
+        data-transition="dissolve"
+      >
+        <img src="img/img1.jpg" alt="" />
+        <img src="img/img2.jpg" alt="" />
+        <img src="img/img3.jpg" alt="" />
+        <img src="img/img4.jpg" alt="" />
+      </div>
 
       <!-- Section with Services -->
       <section>
-        <div class="services">
-          <h2>Let's Work Together To Increase your bottom line!</h2>
-          <p>
-            At Upward Financial Services, our one priority is to give small
-            business across the United States the best results from their
-            bookkeeping, accounting, cash management, and tax service functions.
-          </p>
-          <p>Simplified bookkeeping and tax services.</p>
-        </div>
-
         <!-- Aside with Contact Form -->
 
         <div class="side-form">
@@ -88,10 +88,31 @@
               <button type="submit">Submit</button>
             </form>
           </div>
+          <div class="featuredVideos">
+            <h3>Featured Videos</h3>
+            <p>Benefits of preparing a budget | <a href="#">Video</a></p>
+            <p>Tax planning for beginners | <a href="#">Read More</a></p>
+            <p>
+              Protect your family with Life Insurance |
+              <a href="#">Read More</a>
+            </p>
+          </div>
         </div>
       </section>
-      <div class="servicesBelow">
-        <h2>services</h2>
+
+      <div>
+        <div class="servicesWriteUp">
+          <h2>services</h2>
+          <p>
+            Upward Financial Services is a financial institution that provides
+            financial services to both individuals and businesses that’s
+            partnered with other financial organization that provides tax
+            planning, investing, and insurance services. At Upward Financial
+            Services, we take pride in providing our customers with the utmost
+            best service by meeting their financial goals. If you are in the
+            market for bookkeeping services, look no further.
+          </p>
+        </div>
         <div class="grid-container">
           <div class="service-items">
             <i class="fas fa-calculator"></i>
@@ -135,6 +156,6 @@
         created by Willy Anicette
       </footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/fotorama.js"></script>
   </body>
 </html>

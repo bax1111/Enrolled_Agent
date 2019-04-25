@@ -2,8 +2,7 @@ body {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%230e1c2b' fill-opacity='.40'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
   margin: 0;
   padding: 0;
-  background-repeat: repeat;
-  background-color: white; }
+  background-repeat: repeat; }
   body .container {
     width: 70%;
     margin: 10px auto 40px auto;
@@ -24,15 +23,25 @@ body {
       overflow: hidden; }
     body .services p {
       margin-bottom: 25px; }
-  body .servicesBelow {
-    clear: both; }
-    body .servicesBelow h2 {
-      padding: 5px;
-      margin: auto auto 0 auto;
+  body .fotorama {
+    float: left;
+    width: 70%; }
+  body .servicesWriteUp {
+    clear: both;
+    background: #4f81bd;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    width: 90%; }
+    body .servicesWriteUp h2 {
+      padding-top: 10px;
       text-transform: uppercase;
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       overflow: hidden; }
+    body .servicesWriteUp p {
+      padding: 0 6em 15px 6em;
+      font-size: 1.1em; }
   body .cta-bar {
     background-color: #0e1c2b;
     width: 100%;
@@ -56,7 +65,8 @@ body {
       color: white; }
   body #branding {
     float: left;
-    width: 35%; }
+    width: 35%;
+    margin: 0; }
     body #branding img {
       width: 70%;
       padding: 10px 0;
@@ -67,20 +77,23 @@ body {
   body #nav-container {
     width: 90%;
     margin: auto;
+    background: rgba(0, 0, 0, 0);
     overflow: hidden; }
   body ul {
     margin: 0;
     padding: 0; }
   body header {
-    background-color: #0e1c2b;
+    background: rgba(0, 0, 0, 0);
     border-bottom: 5px solid #a67c00;
     padding-top: 10px; }
   body .menu-nav {
     float: right;
     padding-top: 50px; }
     body .menu-nav .current {
-      color: #0e1c2b;
-      background-color: #a67c00; }
+      color: white;
+      background-color: #0e1c2b;
+      border-radius: 3px;
+      padding: 0 3px; }
     body .menu-nav li {
       display: inline;
       margin: 8px 8px;
@@ -88,19 +101,21 @@ body {
       font-size: 20px; }
     body .menu-nav a {
       text-decoration: none;
-      color: white; }
+      color: #0e1c2b; }
       body .menu-nav a:hover {
         color: #a67c00; }
   body .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 1em;
-    border: 5px solid #0000001a;
-    border-radius: 5px;
+    grid-gap: 2em;
     padding: 0 15px;
     margin: 10px; }
     body .grid-container .service-items {
-      text-align: center; }
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 8px 8px 1em #0e1c2b;
+      overflow: hidden;
+      padding: 5px; }
       body .grid-container .service-items i {
         font-size: 3em;
         margin: 0;
@@ -118,11 +133,11 @@ body {
         line-height: 35px; }
   body .side-form {
     width: 30%;
-    float: right; }
+    float: right;
+    margin-top: 10px; }
     body .side-form .form {
       background-color: rgba(128, 128, 128, 0.178);
-      border-top-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-radius: 10px;
       border: 1px solid #0e1c2b;
       margin: 5px;
       padding: 10px; }
@@ -132,23 +147,29 @@ body {
       body .side-form .form input,
       body .side-form .form select {
         margin-bottom: 5px;
-        border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 3px;
         border: 1px solid #0e1c2b;
         width: 95%;
         text-indent: 5px; }
       body .side-form .form button {
-        border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
         border: 1px solid #a67c00;
         background-color: #0e1c2b;
         color: white;
         padding: 5px;
         margin: auto;
         width: 90%; }
-
-.slideshow {
-  width: 100%; }
+  body .featuredVideos {
+    background-image: radial-gradient(#575757, #0e1c2b);
+    margin: 10px auto 10px auto;
+    padding: 1px 0 3px 5px;
+    border-radius: 5px;
+    line-height: 1em;
+    color: white;
+    width: 95%; }
+    body .featuredVideos a {
+      font-weight: bold;
+      color: #a67c00; }
 
 .bio-section {
   margin: 30px;
@@ -248,7 +269,71 @@ body {
   font-size: 14px;
   padding: 3px 0 3px 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1921px) {
+  div.container {
+    max-width: 1400px; }
+  footer#footer {
+    max-width: 1400px; } }
+
+@media screen and (min-width: 1171px) and (max-width: 1550px) {
+  div.container {
+    width: 90%; }
+  footer#footer {
+    width: 90%; } }
+
+@media screen and (min-width: 900px) and (max-width: 1170px) {
+  div.container {
+    width: 90%; }
+  div#branding {
+    width: 15%;
+    padding: 0;
+    margin: 0; }
+    div#branding img {
+      float: left;
+      width: 100%; }
+  nav.menu-nav {
+    margin-top: 1em;
+    padding: 0;
+    float: right; }
+  footer#footer {
+    width: 90%; } }
+
+@media screen and (min-width: 501px) and (max-width: 899px) {
+  div.container {
+    width: 90%; }
+  div#branding {
+    width: 110%; }
+    div#branding img {
+      margin-left: auto;
+      margin-right: 20%;
+      display: block;
+      clear: both; }
+  nav.menu-nav {
+    padding: 5px; }
+  div.services {
+    width: 95%;
+    margin-left: 2%;
+    margin-right: auto;
+    float: none; }
+    div.services .lineHeight {
+      line-height: 2.3em; }
+  div.side-form {
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  footer#footer {
+    width: 90%; }
+  div.contact {
+    float: none;
+    width: 100%;
+    margin: auto; }
+  div.side-form-ct {
+    float: none;
+    width: 95%;
+    margin: auto; } }
+
+@media screen and (max-width: 500px) {
   div.container {
     width: 90%; }
   div #branding {
@@ -264,17 +349,17 @@ body {
     width: 95%;
     margin-left: 2%;
     margin-right: auto;
-    clear: both; }
+    float: none; }
     div.services .lineHeight {
       line-height: 2.3em; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1em; }
   div.side-form {
-    clear: both;
+    float: none;
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
   footer#footer {
     width: 90%; } }
-
-@media screen and (max-width: 500px) {
-  .container {
-    width: 80%; } }
