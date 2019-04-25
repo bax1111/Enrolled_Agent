@@ -1,13 +1,113 @@
-// // Widescreens
+// // Widescreens: max-width: 1921px
+@include mediaXXl {
+  div.container {
+    max-width: 1400px;
+  }
+  // Footer
+  footer#footer {
+    max-width: 1400px;
+  }
+}
+
+// // Widescreens: max-width: 1550px
 @include mediaXl {
+  div.container {
+    width: 90%;
+  }
+  // Footer
+  footer#footer {
+    width: 90%;
+  }
 }
 
-// // Desktops & Laptops
+// // Desktops & Laptops: max-width: 1170px
 @include mediaLg {
+  div.container {
+    width: 90%;
+  }
+
+  div#branding {
+    width: 15%;
+    padding: 0;
+    margin: 0;
+    img {
+      // margin-left: auto;
+      // margin-right: 20px;
+      // display: block;
+      float: left;
+      width: 100%;
+    }
+  }
+
+  nav.menu-nav {
+    margin-top: 1em;
+    padding: 0;
+    float: right;
+  }
+
+  // Footer
+  footer#footer {
+    width: 90%;
+  }
 }
 
-// Tablets & Small Laptops
+// Tablets & Small Laptops: max-width: 768px
 @include mediaMd {
+  // Banner and Nav
+  div.container {
+    width: 90%;
+  }
+  div#branding {
+    width: 110%;
+    img {
+      margin-left: auto;
+      margin-right: 20%;
+      display: block;
+      clear: both;
+    }
+  }
+  nav.menu-nav {
+    padding: 5px;
+  }
+
+  // Left side Content
+  div.services {
+    width: 95%;
+    margin-left: 2%;
+    margin-right: auto;
+    float: none;
+    .lineHeight {
+      line-height: 2.3em;
+    }
+  }
+
+  // Side Contact Form
+  div.side-form {
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // Footer
+  footer#footer {
+    width: 90%;
+  }
+
+  // Contact Page
+  div.contact {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  div.side-form-ct {
+    float: none;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+// Smartphones: max-width: 500px
+@include mediaSm {
   // Banner and Nav
   div.container {
     width: 90%;
@@ -32,15 +132,21 @@
     width: 95%;
     margin-left: 2%;
     margin-right: auto;
-    clear: both;
+    float: none;
     .lineHeight {
       line-height: 2.3em;
     }
   }
+  //Services Grid
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1em;
+  }
 
   // Side Contact Form
   div.side-form {
-    clear: both;
+    float: none;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -48,12 +154,5 @@
   // Footer
   footer#footer {
     width: 90%;
-  }
-}
-
-// Smartphones
-@include mediaSm {
-  .container {
-    width: 80%;
   }
 }

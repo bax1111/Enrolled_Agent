@@ -1,13 +1,12 @@
 @import "config";
-// @import "slideshow";
 
 // Global
+
 body {
   background: $body-img;
   margin: 0;
   padding: 0;
   background-repeat: repeat;
-  background-color: $container-color;
 
   .container {
     width: $page-width;
@@ -36,15 +35,28 @@ body {
     }
   }
 
-  .servicesBelow {
+  .fotorama {
+    float: left;
+    width: 70%;
+  }
+
+  .servicesWriteUp {
     clear: both;
+    background: rgb(79, 129, 189);
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
     h2 {
-      padding: 5px;
-      margin: auto auto 0 auto;
+      padding-top: 10px;
       text-transform: uppercase;
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       overflow: hidden;
+    }
+    p {
+      padding: 0 6em 15px 6em;
+      font-size: 1.1em;
     }
   }
 
@@ -77,6 +89,7 @@ body {
   #branding {
     float: left;
     width: 35%;
+    margin: 0;
     img {
       width: 70%;
       padding: 10px 0;
@@ -91,6 +104,7 @@ body {
   #nav-container {
     width: 90%;
     margin: auto;
+    background: rgba(0, 0, 0, 0);
     overflow: hidden;
   }
 
@@ -100,7 +114,8 @@ body {
   }
 
   header {
-    background-color: $primary-color;
+    // background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     border-bottom: 5px solid $secondary-color;
     padding-top: 10px;
   }
@@ -109,8 +124,10 @@ body {
     float: right;
     padding-top: 50px;
     .current {
-      color: $primary-color;
-      background-color: $secondary-color;
+      color: white;
+      background-color: $primary-color;
+      border-radius: 3px;
+      padding: 0 3px;
     }
 
     li {
@@ -122,7 +139,7 @@ body {
 
     a {
       text-decoration: none;
-      color: white;
+      color: $primary-color;
 
       &:hover {
         color: $secondary-color;
@@ -134,13 +151,15 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 1em;
-    border: 5px solid #0000001a;
-    border-radius: 5px;
+    grid-gap: 2em;
     padding: 0 15px;
     margin: 10px;
     .service-items {
       text-align: center;
+      border-radius: 5px;
+      box-shadow: 8px 8px 1em $primary-color;
+      overflow: hidden;
+      padding: 5px;
       i {
         font-size: 3em;
         margin: 0;
@@ -167,11 +186,11 @@ body {
   .side-form {
     width: 30%;
     float: right;
+    margin-top: 10px;
 
     .form {
       background-color: rgba(128, 128, 128, 0.178);
-      border-top-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-radius: 10px;
       border: 1px solid $primary-color;
       margin: 5px;
       padding: 10px;
@@ -184,15 +203,13 @@ body {
       input,
       select {
         margin-bottom: 5px;
-        border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 3px;
         border: 1px solid $primary-color;
         width: 95%;
         text-indent: 5px;
       }
       button {
-        border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
         border: 1px solid $secondary-color;
         background-color: $primary-color;
         color: $container-color;
@@ -202,11 +219,22 @@ body {
       }
     }
   }
-}
 
-// Carousel Slideshow
-.slideshow {
-  width: 100%;
+  .featuredVideos {
+    // background-color: rgba(0, 0, 0, 0.3);
+    background-image: radial-gradient(rgb(87, 87, 87), $primary-color);
+    margin: 10px auto 10px auto;
+    padding: 1px 0 3px 5px;
+    border-radius: 5px;
+    line-height: 1em;
+    color: white;
+    width: 95%;
+
+    a {
+      font-weight: bold;
+      color: $secondary-color;
+    }
+  }
 }
 
 // About Page
@@ -334,3 +362,4 @@ body {
 }
 
 @import "mobile";
+// @import "slideshow";
