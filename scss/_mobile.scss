@@ -70,6 +70,29 @@
     padding: 5px;
   }
 
+  div.fotorama {
+    float: none;
+    width: 100%;
+  }
+
+  div.servicesWriteUp {
+    width: 97%;
+    p {
+      padding: 0 1em 15px 1em;
+      font-size: 1.3em;
+    }
+  }
+
+  //Services Grid
+  div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    .item3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
   // Left side Content
   div.services {
     width: 95%;
@@ -127,6 +150,11 @@
     padding: 5px;
   }
 
+  div.fotorama {
+    float: none;
+    width: 100%;
+  }
+
   // Left side Content
   div.services {
     width: 95%;
@@ -137,11 +165,19 @@
       line-height: 2.3em;
     }
   }
+
+  div.servicesWriteUp {
+    width: 97%;
+    p {
+      padding: 0 1em 15px 1em;
+      font-size: 1.3em;
+    }
+  }
+
   //Services Grid
-  .grid-container {
+  div.grid-container {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 1em;
   }
 
   // Side Contact Form
@@ -150,6 +186,9 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    /* .form {
+      margin-top: 8em;
+    } */
   }
   // Footer
   footer#footer {
