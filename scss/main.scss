@@ -3,7 +3,7 @@
 // Global
 
 body {
-  background: $body-img;
+  // background: $body-img;
   margin: 0;
   padding: 0;
   background-repeat: repeat;
@@ -12,6 +12,7 @@ body {
     width: $page-width;
     margin: 10px auto 40px auto;
     background: $container-color;
+    box-shadow: 2px 8px 1em $primary-color;
     border-radius: 10px;
     overflow: hidden;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -42,11 +43,10 @@ body {
 
   .servicesWriteUp {
     clear: both;
-    background: rgb(79, 129, 189);
     margin: auto;
     border-radius: 10px;
-    color: white;
-    width: 90%;
+    color: $primary-color;
+    width: 100%;
     h2 {
       padding-top: 10px;
       text-transform: uppercase;
@@ -55,8 +55,9 @@ body {
       overflow: hidden;
     }
     p {
-      padding: 0 6em 15px 6em;
-      font-size: 1.1em;
+      padding: 0 1em 15px 1em;
+      font-size: 1.3em;
+      text-align: justify;
     }
   }
 
@@ -87,17 +88,13 @@ body {
 
   // Navigation
   #branding {
-    float: left;
-    width: 35%;
-    margin: 0;
+    width: 30%;
+    margin: auto;
     img {
-      width: 70%;
+      width: 100%;
       padding: 10px 0;
+      margin: auto;
       border: 0;
-    }
-    h1 {
-      margin: 0;
-      padding: 0;
     }
   }
 
@@ -114,15 +111,15 @@ body {
   }
 
   header {
-    // background-color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0);
     border-bottom: 5px solid $secondary-color;
     padding-top: 10px;
   }
 
   .menu-nav {
-    float: right;
-    padding-top: 50px;
+    // float: none;
+    // padding-top: 50px;
+    margin: auto;
     .current {
       color: white;
       background-color: $primary-color;
@@ -130,8 +127,12 @@ body {
       padding: 0 3px;
     }
 
+    ul {
+      text-align: center;
+    }
+
     li {
-      display: inline;
+      display: inline-block;
       margin: 8px 8px;
       font-weight: 500;
       font-size: 20px;
@@ -153,7 +154,7 @@ body {
     grid-template-columns: auto auto auto;
     grid-gap: 2em;
     padding: 0 15px;
-    margin: 10px;
+    margin: 10px 10px 25px 10px;
     .service-items {
       text-align: center;
       border-radius: 5px;
@@ -221,7 +222,6 @@ body {
   }
 
   .featuredVideos {
-    // background-color: rgba(0, 0, 0, 0.3);
     background-image: radial-gradient(rgb(87, 87, 87), $primary-color);
     margin: 10px auto 10px auto;
     padding: 1px 0 3px 5px;
