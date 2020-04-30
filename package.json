@@ -11,7 +11,7 @@
   "author": "Willy Anicette",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "node-sass": "^4.9.3"
   },
   "devDependencies": {
